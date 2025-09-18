@@ -8,7 +8,7 @@ import Contactuspage from "./Pages/Contactus.page";
 function App() {
   return (
     <div >
-      navbar
+      
       <Navbarcomponent/>
      
       <div className="wrapper">
@@ -19,7 +19,7 @@ function App() {
         <Route path="/Contact-us" element={Contactuspage}/>
        </Routes>
       </div>
-      fotter
+      
       <Fottercomponent/>
     </div>
   );

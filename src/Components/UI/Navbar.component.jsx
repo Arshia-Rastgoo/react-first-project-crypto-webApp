@@ -1,9 +1,37 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-
+import { Link } from 'react-router-dom'
+import { FaCoins } from 'react-icons/fa'
+import './Navbar.css'
 export default function Navbarcomponent() {
   return (
-    <div>
-      <h4></h4>
-    </div>
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container-fluid">
+        <div> 
+          <span className='navbar-text'><FaCoins className='navbar-logo' /></span>
+          <span className='name1'>   Crypto Tracking </span>
+    
+        </div>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link className="nav-link" to="/Home">Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/FAQ">FAQ</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/AboutUs">AboutUs</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/Contact-us">Contact-us</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   )
 }
