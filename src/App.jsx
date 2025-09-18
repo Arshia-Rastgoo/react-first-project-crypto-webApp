@@ -1,10 +1,17 @@
+import Fottercomponent from "./Components/UI/Fotter.component";
+import Navbarcomponent from "./Components/UI/Navbar.component";
 
 function App() {
   return (
-    <div className="App">
-      <h3>faradars kklkmjklm
-        'p;';''
-      </h3>
+    <div >
+      navbar
+      <Navbarcomponent/>
+     
+      <div className="wrapper">
+        wrapper
+      </div>
+      fotter
+      <Fottercomponent/>
     </div>
   );
 }
