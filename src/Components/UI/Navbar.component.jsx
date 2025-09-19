@@ -31,7 +31,7 @@ export default function Navbarcomponent() {
               <Link className="nav-link" onClick={toggleMenu} to="/FAQ">FAQ</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" onClick={toggleMenu} to="/AboutUs">AboutUs</Link>
+              <Link className="nav-link" onClick={toggleMenu} to="/AboutUs">About-us</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link"  onClick={toggleMenu} to="/Contact-us">Contact-us</Link>
