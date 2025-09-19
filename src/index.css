@@ -8,9 +8,13 @@ body{
 }
 .wrapper{
   background-color: rgba(188, 135, 135, 0.082);
-  height: calc(100vh - 96px);
+  min-height: calc(100vh - 96px);
   
 }
 .container{
   margin-top: 10px;
+}
+.about-img{
+  width: 350px;
+  height: 350px;
 }
