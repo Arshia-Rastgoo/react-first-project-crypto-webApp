@@ -8,4 +8,6 @@ body{
 }
 .wrapper{
   background-color: aqua;
+  height: calc(100vh - 80px);
+  
 }
