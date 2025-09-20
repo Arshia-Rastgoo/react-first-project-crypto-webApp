@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Coins.css"
+import { Link } from 'react-router-dom'
 export default function Coinscomponent({ data }) {
     return (
         <div className='a'>
@@ -23,7 +24,7 @@ export default function Coinscomponent({ data }) {
                         <tr key={coin.market_cap_rank}>
                             <th scope='row'>{coin.market_cap_rank}</th>
                             <td><img src={coin.image} alt='Coin' className='coin-logo'></img></td>
-                            <td>{coin.symbol}</td>
+                            <td><Link to={`/coin/${coin.id}`}>{coin.symbol}</Link></td>
                             <td>{coin.current_price.toLocaleString()}$</td>
                             <td>{coin.price_change_percentage_24h.toLocaleString()}%</td>
                             <td>{coin.total_volume.toLocaleString()}</td>

@@ -5,6 +5,7 @@ import Homepage from "./Pages/Home.page";
 import FAQpage from "./Pages/FAQ.page";
 import AboutUspage from "./Pages/AboutUs.page";
 import Contactuspage from "./Pages/Contactus.page";
+import Coinpage from "./Pages/Coin.page";
 function App() {
   return (
     <div >
@@ -14,6 +15,7 @@ function App() {
       <div className="wrapper">
        <Routes>
         <Route path="/Home" element={Homepage()}/>
+        <Route path="/Coin/:id" element={Coinpage()}/>
         <Route path="/FAQ" element={FAQpage()}/>
         <Route path="/AboutUs" element={AboutUspage()}/>
         <Route path="/Contact-us" element={Contactuspage()}/>
