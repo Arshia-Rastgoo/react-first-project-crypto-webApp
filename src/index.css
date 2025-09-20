@@ -2,6 +2,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  
 }
 body{
   background-color: bisque;
@@ -12,9 +13,13 @@ body{
   
 }
 .container{
-  margin-top: 10px;
+  margin-top: 7px;
+  
 }
 .about-img{
   width: 350px;
   height: 350px;
+}
+.custom-bg{
+  background-color: #f9b761;
 }
