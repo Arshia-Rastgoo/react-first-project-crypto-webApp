@@ -2,6 +2,7 @@ import React, { use, useEffect, useState } from 'react'
 import Spinnercomponent from '../Components/UI/Spinner.component'
 import axios from 'axios';
 import { baseUrl } from '../constants/api';
+import Coinscomponent from '../Components/Coins/Coins.component';
 export default function Homepage() {
 
   const [data, setData] = useState([]);
@@ -13,8 +14,9 @@ export default function Homepage() {
     axios(baseUrl)
       .then(response => {
         setLoading(false);
+        setData(response.data)
         console.log(response.data);
-
+        
       })
       .catch(error => setError("An Error has occured !"))
   }, []);
@@ -31,7 +33,7 @@ export default function Homepage() {
 
       <div className='row'>
         <div className='col-12' >
-          {loading ? <Spinnercomponent /> : error ==="" ? <h1>{error}</h1> : <h1>Data ready</h1>}
+          {loading ? <Spinnercomponent /> : error ==="" ? <h1>{error}</h1> : <Coinscomponent data={data}/>}
           
         </div>
       </div>

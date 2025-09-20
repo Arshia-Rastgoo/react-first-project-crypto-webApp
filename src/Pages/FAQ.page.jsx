@@ -42,6 +42,18 @@ export default function FAQpage() {
             </div>
           </div>
         </div>
+        <div className="accordion-item">
+          <h2 className="accordion-header">
+            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+             What is MetaTrader?
+            </button>
+          </h2>
+          <div id="collapsefour" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div className="accordion-body">
+              <strong>MetaTrader </strong>  is a popular family of trading platforms developed by MetaQuotes Software Corp. that enables traders to access financial markets, analyze price data, and automate trading strategies. There are two main versions used by traders:
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
