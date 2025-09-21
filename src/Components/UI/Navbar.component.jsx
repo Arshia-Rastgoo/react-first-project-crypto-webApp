@@ -25,7 +25,7 @@ export default function Navbarcomponent() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" onClick={toggleMenu} to="/Home">Home</Link>
+              <Link className="nav-link" onClick={toggleMenu} to="/">Home</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" onClick={toggleMenu} to="/FAQ">FAQs</Link>
