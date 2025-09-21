@@ -26,9 +26,9 @@ export default function Homepage() {
     <div className='container'>
       <div className='row'></div>
       <div className='col-12 text-center' >
-        <h1>Crypto Tracking</h1>
-        <h4>A place to manage all your trade informations and actions</h4>
-        <h4>Do not forget to use risk management for your assets !!</h4>
+        <h1 className='mt-2'>Crypto Tracking</h1>
+        <h4 className='mt-3' >A place to manage all your trade informations and actions</h4>
+        <h4>Do not forget to use risk management for your assets !</h4>
       </div>
 
       <div className='row'>
