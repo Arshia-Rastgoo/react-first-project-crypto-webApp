@@ -14,11 +14,11 @@ function App() {
      
       <div className="wrapper">
        <Routes>
-        <Route path="/Home" element={Homepage()}/>
-        <Route path="/Coin/:id" element={Coinpage()}/>
-        <Route path="/FAQ" element={FAQpage()}/>
-        <Route path="/AboutUs" element={AboutUspage()}/>
-        <Route path="/Contact-us" element={Contactuspage()}/>
+        <Route path="/Home" element={<Homepage/>}/>
+        <Route path="/Coin/:id" element={<Coinpage/>}/>
+        <Route path="/FAQ" element={<FAQpage/>}/>
+        <Route path="/AboutUs" element={<AboutUspage/>}/>
+        <Route path="/Contact-us" element={<Contactuspage/>}/>
        </Routes>
       </div>
       

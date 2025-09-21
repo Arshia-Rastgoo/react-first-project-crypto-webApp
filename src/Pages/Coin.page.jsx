@@ -16,10 +16,11 @@ export default function Coinpage() {
     
     
     const [coin, setCoin] = useState({});
-    const [loading, setLoading] = useState([false]);
-    const [error, setError] = useState([""]);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState("");
 
     useEffect(() => {
+        console.log("Requesting URL:", url);
         setLoading(true);
         axios(url)
             .then((response) => {
@@ -29,13 +30,13 @@ export default function Coinpage() {
 
             })
             .catch((error)=> setError("An Error has occured !"))
-    }, []);
+    }, [url]);
 
 
     return (
         <div className='container'>
             {
-                loading ? <Spinnercomponent />  : error === "" ? <h1>{error}</h1> : <Coindetailcomponent coin={coin} />
+                loading ? <Spinnercomponent />  : error !== "" ? <h1>{error}</h1> : <Coindetailcomponent coin={coin} />
             }
         </div>
     )

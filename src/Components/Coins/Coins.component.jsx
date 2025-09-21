@@ -3,7 +3,7 @@ import "./Coins.css"
 import { Link } from 'react-router-dom'
 export default function Coinscomponent({ data }) {
     return (
-        <div className='a'>
+        <div className='table-responsive'>
             <table className="table table-hover  ">
             <thead>
                 <tr>
