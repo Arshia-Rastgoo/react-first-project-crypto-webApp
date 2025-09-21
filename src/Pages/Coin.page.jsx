@@ -35,7 +35,7 @@ export default function Coinpage() {
     return (
         <div className='container'>
             {
-                loading ? <Spinnercomponent /> : error === "" ? <h1>{error}</h1> : <Coindetailcomponent coin={coin} />
+                loading ? <Spinnercomponent />  : error === "" ? <h1>{error}</h1> : <Coindetailcomponent coin={coin} />
             }
         </div>
     )

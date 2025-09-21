@@ -5,7 +5,9 @@
   
 }
 body{
-  background-color: bisque;
+  background-color: bisque; 
+  background-color: aliceblue;
+
 }
 .wrapper{
   background-color: rgba(188, 135, 135, 0.082);
