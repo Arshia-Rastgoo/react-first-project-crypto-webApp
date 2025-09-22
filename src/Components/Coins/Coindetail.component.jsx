@@ -30,8 +30,8 @@ export default function Coindetailcomponent({ coin }) {
           </div>
           <div>
             <h4 className='mt-3'>  Market Cap :
-              <span className='ms-2'>{coin.market_data.market_cap.usd.toLocaleString()}</span>
-              <span className='ms-2 badge bg-success'>{coin.market_data.market_cap_change_percentage_24h.toFixed(2)}%</span>
+              <span className='ms-2'>{coin.market_data.market_cap.usd != null ? coin.market_data.market_cap.usd.toLocaleString() :'-'}</span>
+              <span className='ms-2 badge bg-success'>{coin.market_data.market_cap_change_percentage_24h !=null ? coin.market_data.market_cap_change_percentage_24h.toFixed(2)+ '$' :'-'}</span>
             </h4>
           </div>
           <div>
@@ -57,10 +57,10 @@ export default function Coindetailcomponent({ coin }) {
 
                   <tr >
 
-                    <td>{coin.market_data.price_change_percentage_24h.toFixed(2)}%</td>
-                    <td>{coin.market_data.price_change_percentage_7d.toFixed(2)}%</td>
-                    <td>{coin.market_data.price_change_percentage_30d.toFixed(2)}%</td>
-                    <td>{coin.market_data.price_change_percentage_1y.toFixed(2)}%</td>
+                    <td>{coin.market_data.price_change_percentage_24h !=null ? coin.market_data.price_change_percentage_24h.toFixed(2) + '$' : '-'}</td>
+                    <td>{coin.market_data.price_change_percentage_7d  !=null ? coin.market_data.price_change_percentage_7d.toFixed(2) + '$' : '-'}</td>
+                    <td>{coin.market_data.price_change_percentage_30d !=null ? coin.market_data.price_change_percentage_30d.toFixed(2)+ '$' : '-'}</td>
+                    <td>{coin.market_data.price_change_percentage_1y  !=null ? coin.market_data.price_change_percentage_1y.toFixed(2)+ '$' : '-' }</td>
 
 
                   </tr>
@@ -76,12 +76,12 @@ export default function Coindetailcomponent({ coin }) {
         <div className='col-12 col-md-6'>
           <div>
             <h4 className='mt-2'>Low 24H:
-              <span className='ms-2'>{coin.market_data.low_24h.usd.toLocaleString()}</span>
+              <span className='ms-2'>{coin.market_data.low_24h.usd !=null ?coin.market_data.low_24h.usd.toLocaleString() : '-'}</span>
             </h4>
           </div>
           <div>
             <h4 className='mt-3'>High 24H:
-              <span className='ms-2'>{coin.market_data.high_24h.usd.toLocaleString()}</span>
+              <span className='ms-2'>{coin.market_data.high_24h.usd !=null ?coin.market_data.high_24h.usd.toLocaleString() : '-'}</span>
             </h4>
           </div>
         </div>
